@@ -1,0 +1,67 @@
+easy_admin:
+  site_name: 'Permutation'
+  entities:
+    Grade:
+      class: App\Entity\Grade
+      form:
+        fields:
+          - {property: 'name'}
+    Service:
+      class: App\Entity\Service
+      form:
+        fields:
+          - {property: 'name'}
+    City:
+      class: App\Entity\City
+      form:
+        fields:
+          - {property: 'name'}
+          - {property: 'codeINSEE'}
+          - {property: 'department'}
+    Department:
+      class: App\Entity\Department
+      form:
+        fields:
+          - {property: 'name'}
+          - {property: 'code'}
+          - {property: 'region'}
+    Region:
+      class: App\Entity\Region
+      form:
+        fields:
+          - {property: 'name'}
+          - {property: 'code'}
+    User:
+      class: App\Entity\User
+      form:
+        fields:
+          - {property: 'email'}
+          - {property: 'pseudo'}
+          - {property: 'firstname'}
+          - {property: 'lastname'}
+          - {property: 'lastname'}
+          - {property: 'userRoles'}
+    Role:
+      class: App\Entity\Role
+      form:
+        fields:
+          - {property: 'name'}
+          - {property: 'label'}
+    Message:
+      class: App\Entity\Message
+      form:
+        fields:
+          - {property: 'content'}
+    Annonce:
+      class: App\Entity\Annonce
+      form:
+        fields:
+          - {property: 'informations'}
+          - {property: 'status'}
+          - {property: 'grade'}
+          - {property: 'city', label: 'Ville de mutation'}
+          - {property: 'service'}
+          - {property: 'mutationCity', label: 'Ville de mutation'}
+          - {property: 'mutationDepartment', label: 'Département'}
+          - {property: 'mutationRegion', label: 'Région'}
+          

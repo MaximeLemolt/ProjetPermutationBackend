@@ -1,0 +1,12 @@
+{% extends "emails/base.html.twig" %}
+{% block body %}
+    <h1>Bonjour {{user.pseudo}} </h1>
+
+
+    <p>Un utilisateur viens de s'inscrire, et ses critères de mutations correspondent aux votre</p>
+    <p>Vous pouvez entrer en contact avec cet utilisateurs si vous le souhaiter, voici ces coordonées:</p>
+    <ul>
+        <li>Pseudo : {{ newUser.firstname }}</li>
+        <li>Contact : {{ newUser.email }}</li>
+    </ul>
+{% endblock %}

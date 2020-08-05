@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body style="background: rgb(255,255,255); background: linear-gradient(180deg, rgba(255,255,255,1) 1%, rgba(238,245,255,1) 31%, rgba(234,240,255,1) 58%, rgba(232,237,255,1) 75%, rgba(228,236,255,1) 100%);">
+        <div class="container" style="height: 100vh;">
+            {% block body %}{% endblock %}
+        </div>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
